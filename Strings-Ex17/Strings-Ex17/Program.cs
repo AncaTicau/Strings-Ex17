@@ -6,16 +6,17 @@ namespace Strings_Ex17
     {
         static void Main(string[] args)
         {
-            string givenString = "This is an awesome string";
-            Console.WriteLine(RemoveSpaces(givenString));
+            string swap = SwapCommaWithDot("Ana, Dan, Remus, Maria.");
+            Console.WriteLine(swap);
         }
-        //Write a method to remove spaces from a given string.
 
-        public static string RemoveSpaces(string input)
+        //Write a method to swap comma and dot in a string.
+
+        public static string SwapCommaWithDot(string input)
         {
-            string replaced = input.Replace(" ", "");
+            string result = input.Replace(",", ".");
 
-            return replaced;
+            return result;
         }
     }
 }
